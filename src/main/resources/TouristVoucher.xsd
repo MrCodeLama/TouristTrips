@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="TouristVoucher">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="ID">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Type">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="weekend"/>
+                            <xs:enumeration value="excursion"/>
+                            <xs:enumeration value="vacation"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Country" type="xs:string"/>
+
+                <xs:element name="Days">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:minInclusive value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Nights">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:minInclusive value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Transport">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="air"/>
+                            <xs:enumeration value="rail"/>
+                            <xs:enumeration value="bus"/>
+                            <xs:enumeration value="liner"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Hotel">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="Stars">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="Food">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="HB"/> <!-- Half Board -->
+                                        <xs:enumeration value="BB"/> <!-- Bed & Breakfast -->
+                                        <xs:enumeration value="Al"/> <!-- All-inclusive -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="RoomType">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="4"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="TV" type="xs:boolean"/>
+
+                            <xs:element name="AirConditioning" type="xs:boolean"/>
+
+                            <xs:element name="WiFi" type="xs:boolean"/>
+
+                            <xs:element name="Minibar" type="xs:boolean"/>
+
+                            <xs:element name="Balcony" type="xs:boolean"/>
+
+                            <xs:element name="Parking" type="xs:boolean"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Cost" type="xs:decimal">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:minInclusive value="0.01"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="currency" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

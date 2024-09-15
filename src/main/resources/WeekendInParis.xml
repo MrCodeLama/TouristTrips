@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TouristVoucher currency="EUR">
+    <ID>1</ID>
+    <Type>weekend</Type>
+    <Country>France</Country>
+    <Days>2</Days>
+    <Nights>1</Nights>
+    <Transport>air</Transport>
+    <Hotel>
+        <Stars>3</Stars>
+        <Food>BB</Food>
+        <RoomType>4</RoomType>
+        <TV>true</TV>
+        <AirConditioning>true</AirConditioning>
+        <WiFi>true</WiFi>
+        <Minibar>false</Minibar>
+        <Balcony>false</Balcony>
+        <Parking>false</Parking>
+    </Hotel>
+    <Cost>150.00</Cost>
+</TouristVoucher>

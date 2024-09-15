@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TouristVoucher currency="EUR">
+    <ID>2</ID>
+    <Type>excursion</Type>
+    <Country>Italy</Country>
+    <Days>3</Days>
+    <Nights>2</Nights>
+    <Transport>rail</Transport>
+    <Hotel>
+        <Stars>4</Stars>
+        <Food>HB</Food>
+        <RoomType>1</RoomType>
+        <TV>true</TV>
+        <AirConditioning>true</AirConditioning>
+        <WiFi>true</WiFi>
+        <Minibar>true</Minibar>
+        <Balcony>true</Balcony>
+        <Parking>true</Parking>
+    </Hotel>
+    <Cost>350.00</Cost>
+</TouristVoucher>

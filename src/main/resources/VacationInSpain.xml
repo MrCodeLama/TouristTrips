@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TouristVoucher currency="EUR">
+    <ID>3</ID>
+    <Type>vacation</Type>
+    <Country>Spain</Country>
+    <Days>7</Days>
+    <Nights>6</Nights>
+    <Transport>bus</Transport>
+    <Hotel>
+        <Stars>5</Stars>
+        <Food>Al</Food>
+        <RoomType>3</RoomType>
+        <TV>true</TV>
+        <AirConditioning>true</AirConditioning>
+        <WiFi>true</WiFi>
+        <Minibar>true</Minibar>
+        <Balcony>true</Balcony>
+        <Parking>true</Parking>
+    </Hotel>
+    <Cost>1200.00</Cost>
+</TouristVoucher>

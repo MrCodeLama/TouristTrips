@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TouristVoucher currency="EUR">
+<TouristVoucher>
     <ID>3</ID>
     <Type>vacation</Type>
     <Country>Spain</Country>

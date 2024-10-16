@@ -91,15 +91,15 @@ public class TouristVoucher {
 
     @Override
     public String toString() {
-        return "TouristVoucher{" +
-                "id=" + id +
-                ", type='" + type + '\'' +
-                ", country='" + country + '\'' +
-                ", days=" + days +
-                ", nights=" + nights +
-                ", transport='" + transport + '\'' +
-                ", hotel=" + hotel +
-                ", cost=" + cost +
+        return "\nTouristVoucher{" +
+                "\nid=" + id +
+                ",\ntype='" + type + '\'' +
+                ",\ncountry='" + country + '\'' +
+                ",\ndays=" + days +
+                ",\nnights=" + nights +
+                ",\ntransport='" + transport + '\'' +
+                ",\nhotel=" + hotel +
+                ",\ncost=" + cost +
                 '}';
     }
 }

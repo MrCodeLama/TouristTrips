@@ -100,15 +100,15 @@ public class Hotel {
     @Override
     public String toString() {
         return "Hotel{" +
-                "stars=" + stars +
-                ", food='" + food + '\'' +
-                ", roomType='" + roomType + '\'' +
-                ", tv=" + tv +
-                ", airConditioning=" + airConditioning +
-                ", wifi=" + wifi +
-                ", minibar=" + minibar +
-                ", balcony=" + balcony +
-                ", parking=" + parking +
+                "\n\tstars=" + stars +
+                "\n\tfood='" + food + '\'' +
+                "\n\troomType='" + roomType + '\'' +
+                "\n\ttv=" + tv +
+                "\n\tairConditioning=" + airConditioning +
+                "\n\twifi=" + wifi +
+                "\n\tminibar=" + minibar +
+                "\n\tbalcony=" + balcony +
+                "\n\tparking=" + parking +
                 '}';
     }
 }
